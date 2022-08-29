@@ -1,0 +1,27 @@
+NOTE: These are the commands I used for this lesson:
+#+begin_src sql
+sqlite3 pet_database.db
+
+CREATE TABLE cats (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  age INTEGER
+);
+
+.help
+
+.tables
+
+sqlite> .schema
+CREATE TABLE cats (
+id INTEGER PRIMARY KEY,
+name TEXT,
+age INTEGER
+);
+
+sqlite> ALTER TABLE cats ADD COLUMN breed TEXT;
+
+sqlite> DROP TABLE cats;
+
+.quit
+#+end_src
